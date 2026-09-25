@@ -1,0 +1,41 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "APP_VARIANT": "development",
+        "EXPO_PUBLIC_APP_ENV": "development",
+        "EXPO_PUBLIC_API_BASE_URL": "http://10.0.2.2:8000/api/mobile/v1",
+        "EXPO_PUBLIC_OFFLINE_AUTH_MAX_HOURS": "24"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "APP_VARIANT": "pilot",
+        "EXPO_PUBLIC_APP_ENV": "pilot",
+        "EXPO_PUBLIC_API_BASE_URL": "https://pilot.alumiflow.com/api/mobile/v1",
+        "EXPO_PUBLIC_OFFLINE_AUTH_MAX_HOURS": "24"
+      }
+    },
+    "production": {
+      "env": {
+        "APP_VARIANT": "production",
+        "EXPO_PUBLIC_APP_ENV": "production",
+        "EXPO_PUBLIC_API_BASE_URL": "https://app.alumiflow.com/api/mobile/v1",
+        "EXPO_PUBLIC_OFFLINE_AUTH_MAX_HOURS": "24"
+      }
+    }
+  }
+}

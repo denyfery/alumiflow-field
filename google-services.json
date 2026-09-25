@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309319126503",
+    "project_id": "alumiflow-field",
+    "storage_bucket": "alumiflow-field.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309319126503:android:2dc384e7323d02731a4142",
+        "android_client_info": {
+          "package_name": "com.alumiflow.field"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGRvoSLCi0MyN6Rp8AZdYhQFG8AwXXpGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

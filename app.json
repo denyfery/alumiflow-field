@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "AlumiFlow Field",
+    "slug": "alumiflow-field",
+    "version": "0.4.0",
+    "orientation": "portrait",
+    "scheme": "alumiflow-field",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "AlumiFlow Field menggunakan lokasi hanya saat aktivitas lapangan dimulai atau diselesaikan sebagai evidence pekerjaan."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/branding/notification-icon.png",
+          "color": "#0F766E"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F8FAFC",
+          "image": "./assets/branding/splash-icon.png",
+          "imageWidth": 240,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.alumiflow.field",
+      "versionCode": 10,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/branding/adaptive-icon.png",
+        "backgroundColor": "#0F766E",
+        "monochromeImage": "./assets/branding/adaptive-monochrome.png"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.alumiflow.field",
+      "buildNumber": "10",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f7b434f0-13d7-411d-a036-91fe1818da9d"
+      }
+    },
+    "owner": "app.alumiflow",
+    "icon": "./assets/branding/icon.png",
+    "web": {
+      "favicon": "./assets/branding/icon.png"
+    }
+  }
+}
